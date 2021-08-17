@@ -11,7 +11,7 @@ const MovieList = (props) => {
         <div className="col-lg-4" key={movie.id}>
           <div className="card mb-4 shadow-sm">
             <img
-              src={movie.imageURL}
+              src={`https://www.themoviedb.org/t/p/w220_and_h330_face/${movie.poster_path}`}
               className="card-img-top"
               alt="Sample Movie"
             />
@@ -27,7 +27,7 @@ const MovieList = (props) => {
                   Delete
                 </button>
                 <h2>
-                  <span className="badge badge-info">{movie.rating}</span>
+                  <span className="badge badge-info">{movie.vote_average}</span>
                 </h2>
               </div>
             </div>
